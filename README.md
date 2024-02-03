@@ -2,6 +2,6 @@ We used the neural signals handwritten characters’ dataset from the paper [1].
 wanted to perform inferencing on Jetson TX2, we could not use any complex model. So, we represented the raw neural signals data as images and used Alexnet and Resnet50 models on the raw dataset. However, the custom raw dataset was overfitted on the Alexnet and Resnet50 models. So, we used random noise injection and time-shifting-based data augmentation on the raw dataset, which makes the data 3 times than the custom raw dataset. 
 dataaugmentation.py file is used for data augmentation.
 
-Dataset link: https://uflorida-my.sharepoint.com/:f:/g/personal/ovishake_sen_ufl_edu/EkPqQUHmq6pBjV1rUkwFfqUBpKY6shXNXoQgDGaDFFBLCA?e=9YfcUg
+Raw and augmented dataset link: https://uflorida-my.sharepoint.com/:f:/g/personal/ovishake_sen_ufl_edu/EkPqQUHmq6pBjV1rUkwFfqUBpKY6shXNXoQgDGaDFFBLCA?e=9YfcUg
 
 1. Willett et al., “High-performance brain-to-text communication via handwriting,” Nature, vol. 593, no. 7858, pp. 249–254, 2021.
