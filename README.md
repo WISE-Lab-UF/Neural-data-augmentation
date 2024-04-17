@@ -1,7 +1,8 @@
-We used the neural signals handwritten characters’ dataset from the paper [1]. The authors acquired neural signals from a patient whose hand was paralyzed with a spinal cord injury. The patient provided his neural signals while writing 31 characters and sentences in 10 separate sessions. We used the 31 single characters of neural spikes signal data for building the corpus, where every character has 117 samples. In [1], they proposed a complex CuDNNGRU model on the handwritten character’s neural data. But, as we
-wanted to perform inferencing on Jetson TX2, we could not use any complex model. So, we represented the raw neural signals data as images and used Alexnet and Resnet50 models on the raw dataset. However, the custom raw dataset was overfitted on the Alexnet and Resnet50 models. So, we used random noise injection and time-shifting-based data augmentation on the raw dataset, which makes the data 3 times than the custom raw dataset. 
-dataaugmentation.py file is used for data augmentation.
+We used the neural signal dataset (ECoG) for handwritten character recognition from the paper [1]. In [1], the authors acquired ECoG signals from a patient who provided his neural signals while writing 31 characters and sentences in 10 separate sessions, with each character having 117 samples. In [1], the authors proposed a complex CuDNNGRU model for detecting the handwritten character from the neural data. We, on the other hand, wanted to perform inferencing on a portable platform, and hence, could not use any complex model. Because of this reason, we represented the raw neural signals data as images and used Alexnet and Resnet50 models on the raw dataset. However, the custom raw dataset exhibited overfitting on the Alexnet and Resnet50 models. Consequently, we used random noise injection and time-shifting-based data augmentation on the raw dataset, which makes the data 3 times larger than the custom raw dataset and prevented the overfitting challenges.
+
+The dataaugmentation.py file is used for data augmentation.
 
 Raw and augmented dataset link: https://uflorida-my.sharepoint.com/:f:/g/personal/ovishake_sen_ufl_edu/EkPqQUHmq6pBjV1rUkwFfqUBpKY6shXNXoQgDGaDFFBLCA?e=9YfcUg
 
+Reference:
 1. Willett et al., “High-performance brain-to-text communication via handwriting,” Nature, vol. 593, no. 7858, pp. 249–254, 2021.
