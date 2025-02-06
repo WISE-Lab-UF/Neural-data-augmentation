@@ -1,3 +1,4 @@
+#wiselab
 # SuperFastPython.com
 # example of a program that uses all cpu cores
 import math
