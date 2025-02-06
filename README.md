@@ -2,7 +2,7 @@ We used the neural signal dataset (ECoG) for handwritten character recognition f
 
 The dataaugmentation.py file is used for data augmentation.
 
-Raw and augmented dataset link: https://uflorida-my.sharepoint.com/:f:/g/personal/ovishake_sen_ufl_edu/EkPqQUHmq6pBjV1rUkwFfqUBpKY6shXNXoQgDGaDFFBLCA?e=9YfcUg
+Raw and augmented dataset link: [https://uflorida-my.sharepoint.com/:f:/g/personal/ovishake_sen_ufl_edu/EkPqQUHmq6pBjV1rUkwFfqUBpKY6shXNXoQgDGaDFFBLCA?e=9YfcUg](https://uflorida-my.sharepoint.com/:f:/r/personal/ovishake_sen_ufl_edu/Documents/Documents/PhD/Work/Handwritten%20characters%20%20Willet/EMBC%202025/Dataset%20and%20code/Neural%20Spikes%20Augmented%20Dataset?csf=1&web=1&e=gu1hSu)
 
 The models are trained using the (mlp,lenet5,mobilenetv2,resnet18,efficientnet-lite).py files and the real-time inferencing on Nvidia Jetson is done using without_autocorrect_(mlp,lenet5,mobilenetv2,resnet18,efficientnet-lite).py files
 Reference:
